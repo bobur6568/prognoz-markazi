@@ -1,8 +1,8 @@
 # Prognoz Markazi — Telegram futbol prognoz boti
 
-Cloudflare Workers asosida ishlaydigan, Poisson taqsimoti orqali futbol
+Cloudflare Workers asosida ishlaydigan, Poisson taqsimoti orqali futbol.
 o'yinlariga prognoz beruvchi va Telegram kanalga avtomatik post qiluvchi bot.
-.
+
 ## Loyiha tuzilishi
 
 ```
