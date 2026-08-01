@@ -2,7 +2,7 @@
 
 Cloudflare Workers asosida ishlaydigan, Poisson taqsimoti orqali futbol
 o'yinlariga prognoz beruvchi va Telegram kanalga avtomatik post qiluvchi bot.
-
+.
 ## Loyiha tuzilishi
 
 ```
