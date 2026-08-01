@@ -1,0 +1,21 @@
+name = "prognoz-markazi"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+# Har kuni ertalab soat 07:00 (Toshkent vaqti, UTC+5 -> UTC 02:00) da ishga tushadi
+# Cron sintaksisi UTC bo'yicha ishlaydi
+[triggers]
+crons = ["0 2 * * *"]
+
+# KV namespace - post qilingan o'yinlarni va keshni saqlash uchun
+# `wrangler kv:namespace create "PROGNOZ_KV"` buyrug'i bilan yarating,
+# so'ng qaytgan id ni pastga qo'ying
+[[kv_namespaces]]
+binding = "PROGNOZ_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Maxfiy o'zgaruvchilar (API kalitlar) `wrangler secret put` orqali qo'shiladi:
+#   wrangler secret put TELEGRAM_BOT_TOKEN
+#   wrangler secret put TELEGRAM_CHANNEL_ID
+#   wrangler secret put API_FOOTBALL_KEY
+# Bu yerga hech qachon yozilmaydi (xavfsizlik uchun)
