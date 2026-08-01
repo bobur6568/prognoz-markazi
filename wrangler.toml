@@ -12,7 +12,7 @@ crons = ["0 2 * * *"]
 # so'ng qaytgan id ni pastga qo'ying
 [[kv_namespaces]]
 binding = "PROGNOZ_KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "defa5a942b2c485bb1e59409ff6e227d"
 
 # Maxfiy o'zgaruvchilar (API kalitlar) `wrangler secret put` orqali qo'shiladi:
 #   wrangler secret put TELEGRAM_BOT_TOKEN
